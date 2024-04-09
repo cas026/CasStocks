@@ -1,16 +1,5 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-# Editor-based HTTP Client requests
-/httpRequests/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
-
-# Prerequisites
-*.d
-
 # Compiled Object files
+**/.DS_Store
 *.slo
 *.lo
 *.o
@@ -39,16 +28,31 @@
 *.exe
 *.out
 *.app
-*.ipa
 
-# CLion files
-.idea/
-*.iml
+**/cmake-build-debug
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/install_manifest.txt
+**/CMakeFiles/
+**/CTestTestfile.cmake
+**/Makefile
+**/*.cbp
+**/CMakeScripts
+**/compile_commands.json
 
-# Build files
-cmake-build-*/
+include/divisible/*
 
-# Other files
-*.log
-*.swp
-*.bak
+
+## Local
+
+.idea/*.xml
+
+build/**/*
+
+include/*
+lib/*
+bin/*
+test/test_runner
+
+# Ignore workspace.xml, which stores your workspace preferences
+.idea/workspace.xml
