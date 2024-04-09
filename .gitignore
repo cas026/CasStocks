@@ -56,3 +56,4 @@ test/test_runner
 
 # Ignore workspace.xml, which stores your workspace preferences
 .idea/workspace.xml
+/cmake-build-debug/
